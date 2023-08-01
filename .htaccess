@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On RewriteBase / RewriteCond %{HTTP_HOST} ^mediosdelbajio.mx
+  [NC] RewriteRule ^(.*)$ https://www.mediosdelbajio.mx/$1 [L,R=301]
+</IfModule>
